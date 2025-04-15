@@ -36,11 +36,11 @@ public class EnergyNeedsCalculator {
                 sc.nextLine();
                 return p.getAge();
 
-
             } else {
                 System.out.println("Wrong input, try again");
                 sc.nextLine();
             }
+            System.out.println(age + " years old");
         }
     }
 
@@ -64,6 +64,7 @@ public class EnergyNeedsCalculator {
         while (true) {
             System.out.println("What's your weight?");
             double weight = sc.nextDouble();
+            sc.nextLine();
 
             if (weight > 0) {
                 p.setWeight(weight);
@@ -78,8 +79,9 @@ public class EnergyNeedsCalculator {
 
     public double getUserHeight() {
         while (true) {
-            System.out.println("What's your height?");
+            System.out.println("What's your height in metres?");
             double height = sc.nextDouble();
+            sc.nextLine();
 
             if (height > 0) {
                 p.setHeight(height);
